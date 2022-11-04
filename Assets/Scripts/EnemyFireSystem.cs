@@ -2,7 +2,7 @@
 using UnityEngine;
 namespace WineGiraffe
 { 
-    public class EnemyFireSystem : MonoBehaviour
+    public class EnemyFireSystem : FireSystem
     {
         [SerializeField, Header("¥Í¦¨¶¡¹j"), Range(0, 3)]
         private float interval = 1.5f;
