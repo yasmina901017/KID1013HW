@@ -209,7 +209,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameTarget: shoot
   prefabExplosion: {fileID: 1550130937556786908, guid: adf16985379b5fb419501acbd444f731, type: 3}
-  soundHit: {fileID: 0}
+  soundHit: {fileID: 8300000, guid: 5a734bcdccebe4d0aa169e4bc43d5210, type: 3}
+  soundExplosion: {fileID: 8300000, guid: eeac7ff7e4ad44587b11429a7e7b8fc1, type: 3}
 --- !u!114 &1218851630
 MonoBehaviour:
   m_ObjectHideFlags: 0
