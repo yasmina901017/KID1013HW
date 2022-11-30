@@ -1,19 +1,19 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace WineGiraffe {
     /// <summary>
-    /// ­¸¾÷±±¨î¾¹ 2D¼Ò¦¡
+    /// é£›æ©Ÿæ§åˆ¶å™¨ 2Dæ¨¡å¼
     /// </summary>
 public class AirPlaneController : MonoBehaviour
 {
-        [Header("²¾°Ê³t«×")]
+        [Header("ç§»å‹•é€Ÿåº¦")]
         [SerializeField, Range(0, 10)]
         private float speedVertical = 3.5f;
         [SerializeField, Range(0, 10)]
         private float speedHorizontal = 4f;
-        [Header("¹Ï¤ù")]
+        [Header("åœ–ç‰‡")]
         [SerializeField]
         private Sprite pictureUp;
         [SerializeField]
@@ -21,7 +21,7 @@ public class AirPlaneController : MonoBehaviour
         [SerializeField]
         private Sprite pictureDown;
 
-        [SerializeField, Header("¹Ï¤ù´è¬V¤¸¥ó")]
+        [SerializeField, Header("åœ–ç‰‡æ¸²æŸ“å…ƒä»¶")]
         private SpriteRenderer spr;
 
         private void Update()
@@ -33,17 +33,17 @@ public class AirPlaneController : MonoBehaviour
 
             if(v > 0)
             {
-                print("©¹¤W");
+                print("å¾€ä¸Š");
                 spr.sprite = pictureUp;
             }
             if(v < 0)
             {
-                print("©¹¤U");
+                print("å¾€ä¸‹");
                 spr.sprite = pictureDown;   
             }
             if (v == 0)
             {
-                print("¤¤¶¡");
+                print("ä¸­é–“");
                 spr.sprite = pictureMiddle;
             }
         }

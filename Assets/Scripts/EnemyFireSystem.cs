@@ -1,18 +1,28 @@
-
+ï»¿
 using UnityEngine;
 namespace WineGiraffe
 { 
     public class EnemyFireSystem : FireSystem
     {
-        [SerializeField, Header("¥Í¦¨¶¡¹j"), Range(0, 3)]
+        [SerializeField, Header("ç”Ÿæˆé–“éš”"), Range(0, 3)]
         private float interval = 1.5f;
+
+
         private void Awake()
         {
-            //©I¥s¦Û­q¤èªk
+            //å‘¼å«è‡ªè¨‚æ–¹æ³•
             //SpawnBullet();
 
-            //©µ¿ğ©I¥s³]©w
+            
+        }
+        private void OnBecameVisible()
+        {
+            //å»¶é²é‡è¤‡å‘¼å«è¨­å®š(æ–¹æ³•åç¨±.å»¶é²æ™‚é–“.é–“éš”)
             InvokeRepeating("SpawnBullet", 0, interval);
         }
-    }
+        private void OnBecameInvisible()
+        {
+            Destroy(gameObject);
+        }
+    }   
 }

@@ -1,4 +1,4 @@
-
+ï»¿
 using UnityEngine;
 
 namespace WineGiraffe
@@ -7,7 +7,7 @@ namespace WineGiraffe
     {
         private void Update()
         {
-            //¦pªGª±®a«ö¤UªÅ¥ÕÁä´N¥Í¦¨¤l¼u
+            //å¦‚æœç©å®¶æŒ‰ä¸‹ç©ºç™½éµå°±ç”Ÿæˆå­å½ˆ
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 SpawnBullet();
